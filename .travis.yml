@@ -1,3 +1,4 @@
 language: c
-script: ./configure && make && make test
+
+build: cc main.c
 compiler: gcc
