@@ -13,7 +13,6 @@ install:
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 90
 
 
-script:
-  - clang -coverage -O0 main.cpp -o main
-  - ./main
-  - gcov main.cpp
+script: 
+  - g++ main.cpp -std=c++17 -o travis_gcc_cpp17
+  - ./travis_gcc_cpp17
