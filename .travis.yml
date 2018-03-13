@@ -1,8 +1,8 @@
 
 
-language: c
+language: cpp
 sudo: false # only for faster builds
 script:
-  - clang -coverage -O0 main.c -o main
+  - clang -coverage -O0 main.cpp -o main
   - ./main
-  - gcov main.c
+  - gcov main.cpp
