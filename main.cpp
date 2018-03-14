@@ -7,7 +7,7 @@ public:
 
 
     int vechile_no;
-     int speed;
+      speed;
     int res;
 
         int radar_dis;
